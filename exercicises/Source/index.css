@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
+    margin: 0;
+    color: yellowgreen;
+}
+
+body{
+    background-color: purple;
+}
+
+header{
+    text-align: center;
+    margin: 20px;
+}
+
+section{
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: black;
+    width: 500px;
+    
+}
+
+h2{
+    text-align: center;
+}
+
+ul{
+    margin-left: 28%;
+    font-size: larger;
+}
+
+.section2{
+    margin-left: 26%;
+}

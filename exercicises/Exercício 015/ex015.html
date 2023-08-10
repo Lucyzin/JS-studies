@@ -60,27 +60,27 @@
         
         if (hora<=5 && hora>=1){
 
-            document.querySelector('.imagem').src = '/Source/madrugada.png'
+            document.querySelector('.imagem').src = '../Source/madrugada.png'
             document.querySelector('body').style.background = 'blue'
             document.querySelector('.container').style.background = '#054f77'
             document.querySelector('.bom').innerHTML = 'Boa Madrugada!'
 
         }else if(hora>=6 && hora<=11){
 
-            document.querySelector('img').src = '/Source/dia.png'
+            document.querySelector('img').src = '../Source/dia.png'
             document.querySelector('body').style.background = '#77cff2'
             document.querySelector('.container').style.background = '#27a4f2'
             document.querySelector('.bom').innerHTML = 'Bom Dia!'
 
         }else if(hora>=12 && hora<=17){
 
-            document.querySelector('img').src = '/Source/tarde.png'
+            document.querySelector('img').src = '../Source/tarde.png'
             document.querySelector('body').style.background = '#ff6600'
             document.querySelector('.container').style.background = '#ffa500'
             document.querySelector('.bom').innerHTML = 'Boa Tarde!'
 
         }else{
-            document.querySelector('img').src = '/Source/noite.png'
+            document.querySelector('img').src = '../Source/noite.png'
             document.querySelector('body').style.background = '#618ef2'
             document.querySelector('.container').style.background = '#8eaef6'
             document.querySelector('.bom').innerHTML = 'Boa Noite!'

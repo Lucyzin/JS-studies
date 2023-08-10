@@ -15,11 +15,11 @@
             font-size: large;
             height: 40px;
             width: 100px;
-            margin-top: 50px;
-            margin-left: 100px;
+            margin: 30px;
         }
 
         input[type=number]{
+            color: yellowgreen;
             width: 70px;
             background: none;
             border-top: none;
@@ -27,16 +27,39 @@
             border-right: none;
         }
 
+        main{
+            padding: 20px;
+            margin: 180px auto;
+            width: 400px;
+            background-color: black;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        .resultado{
+            
+            padding: 20px;
+        }
+
+        footer{
+            text-align: center;
+        }
     </style>
 </head>
 <body>
 
-    <h1>Sistema de Multas</h1>
+    <main>
+        <h1>Sistema de Multas</h1>
 
-    Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> Km/h
-    <br><input type="button" value="Verificar">
-    <div id="Resultado"></div>
+        Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> Km/h
+        <br><input type="button" value="Verificar">
+        <div id="Resultado"></div>
 
+    </main>
+    
+    <footer>
+        © Lucy
+    </footer>
     <script>
 
         document.querySelector('input[type=button]').addEventListener('click', calcular)
@@ -53,7 +76,7 @@
 
             if(velocidade > 60){
 
-                resultado.innerHTML += `<p><strong>MULTADO</strong>,sua velocidade excede o limite.</p>`
+                resultado.innerHTML += `<p><strong>MULTADO</strong>, sua velocidade excede o limite.</p>`
 
             }
 

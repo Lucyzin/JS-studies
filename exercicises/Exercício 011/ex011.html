@@ -15,11 +15,12 @@
             font-size: large;
             height: 40px;
             width: 100px;
-            margin-top: 50px;
-            margin-left: 120px;
+            margin: 20px;
         }
 
         input[type=text]{
+            color: yellowgreen;
+            text-align: center;
             width: 150px;
             background: none;
             border-top: none;
@@ -27,20 +28,37 @@
             border-right: none;
         }
 
+        div{
+            padding: 20px;
+        }
+
+        main{
+            border-radius: 20px;
+            padding: 20px;
+            width: 400px;
+            margin: 170px auto;
+            background-color: black;
+            text-align: center;
+        }
+        footer{
+            text-align: center;
+        }
+
     </style>
 </head>
 <body>
-    <h1>Sistema do trump de barreira mexicana</h1>
-    País que tu nasceu: <input type="text" name="pais" id="pais">
-    <br><input type="button" value="Verificar" id="verificar">
-    <div id="resultado"></div>
-
+    <main>
+        <h1>Sistema de barreira</h1>
+        País que tu nasceu: <input type="text" name="pais" id="pais">
+        <br><input type="button" value="Verificar" id="verificar">
+        <div id="resultado"></div>
+    </main>
+    <footer>
+        © Lucy
+    </footer>
     <script>
 
         document.querySelector('input[type=button]').addEventListener('click', verificar)
-
-       
-
 
         function verificar(){
             
@@ -48,11 +66,11 @@
 
             if(pais=='Brasil'){
 
-            document.querySelector('div#resultado').innerHTML = `Naturalizado natural pode entrar pai ja que tu é do ${pais}`
+            document.querySelector('div#resultado').innerHTML = `Naturalizado no ${pais}`
 
             } else {
 
-                document.querySelector('div#resultado').innerHTML = `Barrado pai aqui tu n entra pq fora estrangeiro ja que tu é ${pais}`
+                document.querySelector('div#resultado').innerHTML = `Estrangeiro detectado vindo de ${pais}`
 
             }
             

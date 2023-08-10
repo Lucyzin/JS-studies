@@ -25,19 +25,19 @@ function verificar(){
 
             if(idade>=0 && idade<13){
 
-                img.setAttribute('src', '/Source/CriançaM.jpg')
+                img.setAttribute('src', '../Source/CriançaM.jpg')
 
             }else if(idade<21){
                 
-                img.setAttribute('src', '/Source/jovemM.jpg')
+                img.setAttribute('src', '../Source/jovemM.jpg')
     
             }else if(idade<50){
     
-                img.setAttribute('src', '/Source/adultoM.jpg')
+                img.setAttribute('src', '../Source/adultoM.jpg')
     
             }else{
     
-                img.setAttribute('src', '/Source/idosoM.jpg')
+                img.setAttribute('src', '../Source/idosoM.jpg')
                 
             }
 
@@ -47,20 +47,20 @@ function verificar(){
 
             if(idade>=0 && idade<10){
 
-                img.setAttribute('src', '/Source/CriançaF.jpg')
+                img.setAttribute('src', '../Source/CriançaF.jpg')
 
 
             }else if(idade<21){
                 
-                img.setAttribute('src', '/Source/jovemF.jpg')
+                img.setAttribute('src', '../Source/jovemF.jpg')
     
             }else if(idade<50){
     
-                img.setAttribute('src', '/Source/adultoF.jpg')
+                img.setAttribute('src', '../Source/adultoF.jpg')
     
             }else{
     
-                img.setAttribute('src', '/Source/idosoF.jpg')
+                img.setAttribute('src', '../Source/idosoF.jpg')
                 
             }
             
