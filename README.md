@@ -1,5 +1,5 @@
-# JS-studies
- Initial **JS** studies;
+# JS-studies 🧠
+ Initial **JS** studies. 📚🖊️
 
 * Variables, 
 * Arrays, 
