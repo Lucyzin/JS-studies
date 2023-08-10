@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trump System</title>
+    <style>
+        body{
+            background-color: purple;
+            color: greenyellow;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        input[type=button]{
+            font-size: large;
+            height: 40px;
+            width: 100px;
+            margin-top: 50px;
+            margin-left: 120px;
+        }
+
+        input[type=text]{
+            width: 150px;
+            background: none;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Sistema do trump de barreira mexicana</h1>
+    País que tu nasceu: <input type="text" name="pais" id="pais">
+    <br><input type="button" value="Verificar" id="verificar">
+    <div id="resultado"></div>
+
+    <script>
+
+        document.querySelector('input[type=button]').addEventListener('click', verificar)
+
+       
+
+
+        function verificar(){
+            
+            pais = document.getElementById('pais').value
+
+            if(pais=='Brasil'){
+
+            document.querySelector('div#resultado').innerHTML = `Naturalizado natural pode entrar pai ja que tu é do ${pais}`
+
+            } else {
+
+                document.querySelector('div#resultado').innerHTML = `Barrado pai aqui tu n entra pq fora estrangeiro ja que tu é ${pais}`
+
+            }
+            
+        }
+
+    </script>
+
+</body>
+</html>

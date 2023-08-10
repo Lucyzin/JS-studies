@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=0, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body {
+            background-color: purple;
+            color: greenyellow;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado.</p>
+    <p>aprendendo a usar <strong>DOM</strong> em Javascript.</p>
+
+    <div class="msg">clique em mim</div>
+    
+    <script>    
+        corpo = document.body
+        
+    //    p1 = document.getElementById('msg')
+
+    //    p1.innerText = 'Estou aguardando'
+        
+    //    document.getElementById('msg').innerText = 'Olá...'
+
+    //    mensagem = document.getElementsByName('msg')[0]
+
+    //    mensagem.innerHTML = '<br><strong>Oi...</strong>, blz?'
+
+        mensagem = document.querySelector('div.msg')
+
+        mensagem.innerText = '1123092103921093'
+
+    </script>
+</body>
+</html>

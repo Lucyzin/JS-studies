@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: cyan;
+            margin: 0;
+            padding: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        h1{
+            margin: 20px;
+        }
+        section{
+            margin: 0 auto;
+            background-color: antiquewhite;
+            width: 500px;
+            height: 350px;
+            border-radius: 20px;
+        }
+
+        .formulario{
+            padding: 30px;
+            margin: 0 auto;
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            grid-gap: 10px;
+        }
+
+        select{
+            width: 200px;
+        }
+    
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Tabuada</h1>
+    </header>
+    <section>
+        <div class="formulario">
+            <label for="numero">Número: </label><input type="number" name="numero" id="numero" class="numero"><input type="button" value="Gerar Tabuada" class="gerar" onclick="gerar()">
+        </div>
+        <div>
+            <select name="tabuada" id="tabuada" multiple size="10">
+              
+            </select>
+        </div>
+    </section>
+    <footer>
+        <p>© Lucy</p>
+    </footer>
+    
+    <script src="script3.js"></script>
+
+</body>
+</html>

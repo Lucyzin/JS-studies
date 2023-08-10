@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contando</title>
+
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: cyan;
+            text-align: center;
+        }
+        section{
+            margin: 0 auto;
+            background-color: aliceblue;
+            width: 500px;
+            border-radius: 20px;
+            padding: 50px;
+        }
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input[type=number]{
+            width: 200px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        input[type=submit]{
+            width: 100px;
+            height: 40px;
+            margin: 30px;
+            font-size: larger;
+        }
+
+        .result{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contando</h1>
+    <section>
+        <div>
+            <label for="start">Ínicio:</label> <input type="number" name="start" id="start">
+            <label for="end">Fim:</label> <input type="number" name="end" id="end">
+            <label for="passo">Passo:</label> <input type="number" name="passo" id="passo">
+            <input type="submit" value="Contar" onclick="contar()">
+        </div>
+        <div class="result">
+            Resultado:<br>
+        </div>
+    </section>
+    <footer>
+        <p>© Lucy</p>
+    </footer>
+    <script src="script2.js">
+    </script>
+
+</body>
+</html>

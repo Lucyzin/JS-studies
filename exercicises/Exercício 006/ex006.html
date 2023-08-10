@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=0, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        body {
+            background-color: purple;
+            color: greenyellow;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        div#area{
+            background-color: green;
+            color: white;
+
+            width: 200px;
+            height: 200px;
+
+            line-height: 200px;
+
+            text-align: center;
+
+            user-select: none;
+
+            margin-left: 280px;
+            margin-top: 50px;
+
+        }
+    </style>
+</head>
+<body>
+
+    <div id="area">Interaja...</div>
+
+    <script>    
+
+        area = window.document.getElementById('area')
+        clicks = 0
+
+        area.addEventListener('click', clicar)
+        area.addEventListener('mouseenter', entrar)
+        area.addEventListener('mouseout', sair)
+
+        function random_rgba() {
+            var o = Math.round, r = Math.random, s = 255;
+            return 'rgba(' + o(r()*s) + ',' + o(r()*s) + ',' + o(r()*s) + ',' + r().toFixed(1) + ')';
+        }
+        
+        function clicar(){
+            clicks ++
+            
+
+            area.innerText = `Clicou ${clicks}x`
+            area.style.background = random_rgba()
+        }
+
+        function entrar(){
+            area.innerText = 'Start!'
+            area.style.background = 'green'
+        }
+
+        function sair(){
+            clicks = 0
+            area.innerText = 'Reset!'
+            area.style.background = 'red'
+        
+        }
+
+    </script>
+</body>
+</html>

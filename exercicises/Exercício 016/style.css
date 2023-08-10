@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: purple;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: greenyellow;
+}
+
+div{
+    padding: 10px;
+}
+
+
+section{
+    border-radius: 20px;
+    background-color: black;
+    text-align: center;
+    margin: 0 auto;
+    width: 600px;
+    color: greenyellow;
+}
+
+input[type=submit]{
+    font-size: larger;
+    width: 120px;
+    height: 40px;
+    color: greenyellow;
+    background-color: purple;
+    margin-top: 20px;
+}
+
+.div-ano{
+    padding-top: 30px;
+}
+
+footer{
+    margin: 20px;
+}
+
+.resultado{
+    padding-top: 30px;
+}
+
+img{
+    width: 250px;
+    border-radius: 25%;
+    margin-bottom: 15px;
+}
